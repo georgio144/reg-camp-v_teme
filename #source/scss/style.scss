@@ -1,3 +1,17 @@
 //подключили обнуление
 @import "nullstyle.scss";
 
+@font-face {
+   font-family: "EE-Bellflower";
+   src: url("../fonts/12190.eot");
+   src: local("☺"), url("../fonts/12190.woff") format("woff"), url("../fonts/12190.ttf") format("truetype"),
+      url("../fonts/12190.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+//подключили шрифты
+
+.hello{
+   font-family: "EE-Bellflower";
+   font-size: 18px;
+}
