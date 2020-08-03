@@ -95,7 +95,98 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-.hello {
+body {
+  background: url("/img/ФОН.png") center/cover no-repeat;
   font-family: "EE-Bellflower";
-  font-size: 18px;
+  max-width: 1005px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen {
+  display: flex;
+  min-height: 100vh;
+}
+
+.fullscreen__body {
+  width: 100%;
+  flex: 1 1 auto;
+  max-width: 1005px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hi__body {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+
+.hi__text {
+  text-align: left;
+  margin: 191px 45px 0 46px;
+}
+
+.hi__image {
+  align-items: center;
+}
+
+.hi__text p:first-child {
+  font-size: 48px;
+  color: #190a0a;
+}
+
+.hi__text p:nth-child(2) {
+  color: #190a0a;
+  font-size: 36px;
+}
+
+.hi__text p:nth-child(3) {
+  color: #190a0a;
+  font-size: 36px;
+}
+
+.hi__text p:last-child {
+  color: #190a0a;
+  font-size: 30px;
+}
+
+.footer {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__link a {
+  color: black;
+  font-size: 12px;
+  text-decoration: underline;
+  letter-spacing: 0.4px;
+}
+
+.footer__link p {
+  text-align: center;
+}
+
+.footer__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px;
 }
