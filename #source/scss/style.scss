@@ -11,21 +11,19 @@
 }
 //подключили шрифты
 
-body{
-   background: url('/img/ФОН.png') center / cover no-repeat;
+body {
+   background: url("/img/ФОН.png") center / cover repeat-y;
    font-family: "EE-Bellflower";
    max-width: 1005px;
    margin: 0 auto;
 }
 
-
-
 .wrapper {
-   min-height: 100vh;
+   min-height: 110vh;
    overflow: hidden;
    display: flex;
-   flex-direction:column;
-   
+   flex-direction: column;
+   background: url("/img/ФОН_ЛОГО.png") 80% 80% no-repeat;
 }
 
 .fullscreen {
@@ -43,7 +41,6 @@ body{
 
 .content {
    max-width: 100%;
-
 }
 
 .hi {
@@ -75,26 +72,111 @@ body{
    align-items: center;
 }
 
-.hi__text p:first-child{
+.hi__text p:first-child {
    font-size: 48px;
    color: #190a0a;
 }
 
-.hi__text p:nth-child(2){
+.hi__text p:nth-child(2) {
    color: #190a0a;
    font-size: 36px;
 }
 
-.hi__text p:nth-child(3){
+.hi__text p:nth-child(3) {
    color: #190a0a;
    font-size: 36px;
 }
 
-.hi__text p:last-child{
+.hi__text p:last-child {
    color: #190a0a;
    font-size: 30px;
 }
 
+.form-wrap {
+   min-height: 100vh;
+}
+.container {
+}
+
+.form-wrap__row {
+   display: flex;
+   flex: 1 1 auto;
+   min-height: 110vh;
+}
+
+.form-wrap__body {
+   display: flex;
+   flex: 1 1 auto;
+   min-height: 110vh;
+   max-width: 893px;
+   margin: 0 auto;
+   font-size: 30px;
+}
+
+input {
+   margin: 0 0 7px 0;
+   border-radius: 4px;
+   height: 20px;
+   width: 350px;
+}
+
+input:hover {
+   box-shadow: 0 6px 40px rgba(9, 31, 231, 0.54);
+}
+
+input:active {
+   box-shadow: 0 6px 40px rgba(9, 224, 231, 0.54);
+}
+
+input:focus {
+   box-shadow: 0 6px 40px rgba(216, 8, 8, 0.54);
+}
+
+p {
+   text-align: left;
+}
+
+.check1 {
+   display: flex;
+   align-items: center;
+}
+
+.none {
+   font-size: 16px;
+}
+
+.form-wrap__ask {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 auto;
+}
+
+.form-wrap__button {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.form-wrap__button__send {
+   height: 210px;
+   width: 210px;
+   cursor: pointer;
+}
+
+button {
+   background: url("/img/button-original.png") no-repeat;
+}
+
+button:hover{
+   background: url('/img/button1.png') no-repeat;
+}
+
+button:active{
+   background: url('/img/button3.png') no-repeat;
+}
+
+.end-reg p {
+   font-size: 22px;
+}
 
 .footer {
    display: flex;
@@ -106,14 +188,14 @@ body{
 .footer__row {
 }
 
-.footer__link a{
+.footer__link a {
    color: black;
    font-size: 12px;
    text-decoration: underline;
    letter-spacing: 0.4px;
 }
 
-.footer__link p{
+.footer__link p {
    text-align: center;
 }
 .private-policy {

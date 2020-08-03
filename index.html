@@ -33,7 +33,36 @@
                   <div class="container">
                      <div class="form-wrap__row">
                         <div class="form-wrap__body">
-
+                           <form method="post" action="form.php">
+                              <div class="form-wrap__ask">
+                                 <label for="name">1. Фамилия, Имя </label>
+                                 <input type="text" name="name" required />
+                                 <label for="birthday">2. Дата рождения</label>
+                                 <input type="text" name="birthday" required />
+                                 <label for="helth">3. Есть ли у тебя аллергия на что-то или 
+                                    ограничения по здоровью? </label>
+                                    <input type="text" name="helth" required />
+                                    <label for="fear">4. Твои страхи? </label>
+                                    <input type="text" name="fear" required />
+                                    <label for="phone">5. Твой номер телефона:</label>
+                                    <input type="text" name="your-phone" required />
+                                    <label for="mother-phone">Номер мамы:</label>
+                                    <input type="text" name="mother-phone" required />
+                                    <label for="father-phone">Номер папы:</label>
+                                    <input type="text" name="father-phone" required />
+                                    <span class="foo">6. Отметь, если у тебя есть 
+                                       вредные привычки <span class="none">(не бойся, об этом никто не узнает)</span>
+                                    </span> 
+                                    <span class="check1"><input type="checkbox" name="foo" value="smock">курение</span>
+                                    <span class="check1"><input type="checkbox" name="foo" value="alcohol">алкоголь</span>
+                                    <div class="end-reg"><p>Нажми на кнопку Завершить регистрацию 
+                                       что бы мы получили твой запрос   ~> </p>
+                                       <p>Спасибо и до встречи! Будь #в_теме!</p></div>
+                              </div>
+                              <div class="form-wrap__button">
+                                    <button class="form-wrap__button__send"></button>
+                              </div>
+                           </form>
                         </div>
                      </div>
                   </div>
