@@ -14,7 +14,6 @@
 body {
    background: url("/img/ФОН.png") center / cover repeat-y;
    font-family: "EE-Bellflower";
-   max-width: 1005px;
    margin: 0 auto;
 }
 
@@ -25,6 +24,29 @@ body {
    flex-direction: column;
    background: url("/img/ФОН_ЛОГО.png") 80% 80% no-repeat;
 }
+
+@media (max-width:1200px){
+	.container{
+		max-width: 970px;
+	}
+}
+@media (max-width:992px){
+	.container{
+		max-width: 750px;
+	}
+}
+@media (max-width:767px){
+	.container{
+		max-width: none;
+	}
+}
+
+
+@media (max-width:420px){
+	
+}
+
+
 
 .fullscreen {
    display: flex;
@@ -40,10 +62,7 @@ body {
 }
 
 .content {
-   max-width: 100%;
-}
-
-.hi {
+   max-width: 1005px;
 }
 
 .container {
@@ -51,16 +70,11 @@ body {
    margin: 0 auto;
 }
 
-.hi__row {
-}
-
 .hi__body {
    display: flex;
+   flex: 0 1 50%;
    padding: 50px 0;
    justify-content: space-between;
-}
-
-.hi__title {
 }
 
 .hi__text {
@@ -96,7 +110,9 @@ body {
    min-height: 100vh;
 }
 .container {
+   max-width: 893px;
 }
+
 
 .form-wrap__row {
    display: flex;
@@ -185,9 +201,6 @@ button:active{
    align-items: center;
 }
 
-.footer__row {
-}
-
 .footer__link a {
    color: black;
    font-size: 12px;
@@ -197,11 +210,6 @@ button:active{
 
 .footer__link p {
    text-align: center;
-}
-.private-policy {
-}
-
-.accept-pers-data {
 }
 
 .footer__text {

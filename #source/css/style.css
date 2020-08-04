@@ -98,7 +98,6 @@ h6 {
 body {
   background: url("/img/ФОН.png") center/cover repeat-y;
   font-family: "EE-Bellflower";
-  max-width: 1005px;
   margin: 0 auto;
 }
 
@@ -110,6 +109,21 @@ body {
   background: url("/img/ФОН_ЛОГО.png") 80% 80% no-repeat;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
 .fullscreen {
   display: flex;
   min-height: 100vh;
@@ -125,7 +139,7 @@ body {
 }
 
 .content {
-  max-width: 100%;
+  max-width: 1005px;
 }
 
 .container {
@@ -135,6 +149,7 @@ body {
 
 .hi__body {
   display: flex;
+  flex: 0 1 50%;
   padding: 50px 0;
   justify-content: space-between;
 }
@@ -170,6 +185,10 @@ body {
 
 .form-wrap {
   min-height: 100vh;
+}
+
+.container {
+  max-width: 893px;
 }
 
 .form-wrap__row {
