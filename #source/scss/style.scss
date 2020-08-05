@@ -12,17 +12,16 @@
 //подключили шрифты
 
 body {
-   background: url("/img/ФОН.png") center / cover no-repeat;
+   background: url("/img/ФОН2.jpg") center / cover no-repeat #F3E2C7;
    font-family: "EE-Bellflower";
    margin: 0 auto;
 }
 
 .wrapper {
-   min-height: 120vh;
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   background: url("/img/ФОН_ЛОГО.png") 50% 80% no-repeat;
+   //background: url("/img/ФОН_ЛОГО.png") 50% 80% no-repeat fixed;
 }
 
 @media (max-width: 1200px) {
@@ -46,8 +45,7 @@ body {
 }
 
 @media (max-width: 420px) {
-   body{
-      
+   body {
    }
 }
 
@@ -69,6 +67,7 @@ body {
 }
 
 .container {
+   height: 100%;
    min-width: 1005px;
    margin: 0 auto;
 }
