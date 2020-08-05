@@ -12,41 +12,44 @@
 //подключили шрифты
 
 body {
-   background: url("/img/ФОН.png") center / cover repeat-y;
+   background: url("/img/ФОН.png") center / cover no-repeat;
    font-family: "EE-Bellflower";
    margin: 0 auto;
 }
 
 .wrapper {
-   min-height: 110vh;
+   min-height: 120vh;
    overflow: hidden;
    display: flex;
    flex-direction: column;
-   background: url("/img/ФОН_ЛОГО.png") 80% 80% no-repeat;
+   background: url("/img/ФОН_ЛОГО.png") 50% 80% no-repeat;
 }
 
-@media (max-width:1200px){
-	.container{
-		max-width: 970px;
-	}
+@media (max-width: 1200px) {
+   .container {
+      max-width: 970px;
+   }
 }
-@media (max-width:992px){
-	.container{
-		max-width: 750px;
-	}
+@media (max-width: 992px) {
+   .container {
+      max-width: 750px;
+   }
 }
-@media (max-width:767px){
-	.container{
-		max-width: none;
-	}
+@media (max-width: 767px) {
+   .container {
+      font-size: 14px;
+      max-width: 100%;
+   }
+   .content {
+      font-size: 14px;
+   }
 }
 
-
-@media (max-width:420px){
-	
+@media (max-width: 420px) {
+   body{
+      
+   }
 }
-
-
 
 .fullscreen {
    display: flex;
@@ -62,11 +65,11 @@ body {
 }
 
 .content {
-   max-width: 1005px;
+   min-width: 1005px;
 }
 
 .container {
-   max-width: 100%;
+   min-width: 1005px;
    margin: 0 auto;
 }
 
@@ -110,9 +113,8 @@ body {
    min-height: 100vh;
 }
 .container {
-   max-width: 893px;
+   min-width: 893px;
 }
-
 
 .form-wrap__row {
    display: flex;
@@ -182,12 +184,12 @@ button {
    background: url("/img/button-original.png") no-repeat;
 }
 
-button:hover{
-   background: url('/img/button1.png') no-repeat;
+button:hover {
+   background: url("/img/button1.png") no-repeat;
 }
 
-button:active{
-   background: url('/img/button3.png') no-repeat;
+button:active {
+   background: url("/img/button3.png") no-repeat;
 }
 
 .end-reg p {
@@ -199,10 +201,11 @@ button:active{
    height: 65px;
    justify-content: center;
    align-items: center;
+   background-color: black;
 }
 
 .footer__link a {
-   color: black;
+   color: white;
    font-size: 12px;
    text-decoration: underline;
    letter-spacing: 0.4px;
@@ -214,6 +217,15 @@ button:active{
 
 .footer__text {
    font-size: 14px;
+   color: white;
    text-align: center;
    margin: 10px;
+}
+
+@media (max-width: 767px) {
+   .body {
+      font-size: 14px;
+   }
+   .container {
+   }
 }

@@ -96,17 +96,17 @@ h6 {
   font-style: normal;
 }
 body {
-  background: url("/img/ФОН.png") center/cover repeat-y;
+  background: url("/img/ФОН.png") center/cover no-repeat;
   font-family: "EE-Bellflower";
   margin: 0 auto;
 }
 
 .wrapper {
-  min-height: 110vh;
+  min-height: 120vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background: url("/img/ФОН_ЛОГО.png") 80% 80% no-repeat;
+  background: url("/img/ФОН_ЛОГО.png") 50% 80% no-repeat;
 }
 
 @media (max-width: 1200px) {
@@ -121,7 +121,12 @@ body {
 }
 @media (max-width: 767px) {
   .container {
-    max-width: none;
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .content {
+    font-size: 14px;
   }
 }
 .fullscreen {
@@ -139,11 +144,11 @@ body {
 }
 
 .content {
-  max-width: 1005px;
+  min-width: 1005px;
 }
 
 .container {
-  max-width: 100%;
+  min-width: 1005px;
   margin: 0 auto;
 }
 
@@ -188,7 +193,7 @@ body {
 }
 
 .container {
-  max-width: 893px;
+  min-width: 893px;
 }
 
 .form-wrap__row {
@@ -276,10 +281,11 @@ button:active {
   height: 65px;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .footer__link a {
-  color: black;
+  color: white;
   font-size: 12px;
   text-decoration: underline;
   letter-spacing: 0.4px;
@@ -291,6 +297,13 @@ button:active {
 
 .footer__text {
   font-size: 14px;
+  color: white;
   text-align: center;
   margin: 10px;
+}
+
+@media (max-width: 767px) {
+  .body {
+    font-size: 14px;
+  }
 }
